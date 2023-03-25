@@ -63,6 +63,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHRModels", "patienthealthr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHRservice", "patienthealthrecordapi\PHRservice\PHRservice.csproj", "{E65C2642-2A90-41D7-A4D8-5B932004448C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3F172411-7DBB-487A-9892-AC41FF50C305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentService", "AppointmentService", "{2D00B596-3561-4C99-A062-EDB09F08F82F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentServiceBL", "Tests\AppointmentService\AppointmentServiceBL\AppointmentServiceBL.csproj", "{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentServiceApi", "Tests\AppointmentService\AppointmentServiceApi\AppointmentServiceApi.csproj", "{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentServiceDL", "Tests\AppointmentService\AppointmentServiceDL\AppointmentServiceDL.csproj", "{56D69F43-22A0-4294-B718-25AECD494AB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,9 +199,27 @@ Global
 		{E65C2642-2A90-41D7-A4D8-5B932004448C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65C2642-2A90-41D7-A4D8-5B932004448C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65C2642-2A90-41D7-A4D8-5B932004448C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D69F43-22A0-4294-B718-25AECD494AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D69F43-22A0-4294-B718-25AECD494AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D69F43-22A0-4294-B718-25AECD494AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D69F43-22A0-4294-B718-25AECD494AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D00B596-3561-4C99-A062-EDB09F08F82F} = {3F172411-7DBB-487A-9892-AC41FF50C305}
+		{CCDF4EEE-8F28-48C4-ADDA-3BB22CE7230E} = {2D00B596-3561-4C99-A062-EDB09F08F82F}
+		{1B67E8A6-AFF9-41BD-9C0B-D815C3963DC0} = {2D00B596-3561-4C99-A062-EDB09F08F82F}
+		{56D69F43-22A0-4294-B718-25AECD494AB4} = {2D00B596-3561-4C99-A062-EDB09F08F82F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D57FB12-AD77-4CEB-8C09-4FB974D4D16C}
